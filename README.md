@@ -10,6 +10,6 @@ Usage->
 
 Contributing-> If you would like to contribute to this project and have knowledge regarding UI design, Java coding, and/or Android app development please leave such comments on the relevant txt file called Suggestions/Contributions. Alternatively, if you're looking to report bugs, please leave a bug report (with info regarding incorrect calculations or app crashing*specify what you were doing when the app crashed*) under the txt file called Found Bugs.
 
-Credits-> Siddharth Nair for the UI design of the app and the presets,custom, and counter sections of the app and Christopher for Quality Control, calculations of days, holiday implementation and linking of UI to the backend. Without either of them this project would not have gotten off the ground.
+Credits-> Siddharth Nair for the UI design of the app and the presets,custom, and counter sections of the app and Christopher Pasala for Quality Control, calculations of days, holiday implementation and linking of UI to the backend. Without either of them this project would not have gotten off the ground.
 
 License-> GNU General Public License v3.0
