@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="below_select_what_category_you_wish_to_use_custom_allows_for_custom_input_preset_uses_preset_numbers_based_on_your_university_status_to_expedite_the_process_and_meal_counter_allows_you_to_keep_count_of_your_meals_and_dining_dollars_as_you_wish">Below, select what category you wish to use. Custom allows for custom input, Preset uses preset numbers based on your university status to expedite the process, and Meal Counter allows you to keep count of your meals and dining dollars as you wish.</string>
+    <string name="about">ABOUT</string>
+    <string name="how_to_use">HOW TO USE</string>
+    <string name="meal_maximizer_is_an_app_that_helps_you_the_user_better_manage_the_resources_that_are_allocated_to_you_via_your_meal_plan">Meal Maximizer is an app that helps you, the user, better manage the resources that are allocated to you via your meal plan!</string>
+</resources>
