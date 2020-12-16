@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".freshman"></activity>
+        <activity android:name=".Count"></activity>
+        <activity android:name=".Corp" />
+        <activity android:name=".Upper" />
+        <activity android:name=".freshman" />
         <activity android:name=".presets" />
         <activity android:name=".Custom" />
         <activity android:name=".MainActivity">

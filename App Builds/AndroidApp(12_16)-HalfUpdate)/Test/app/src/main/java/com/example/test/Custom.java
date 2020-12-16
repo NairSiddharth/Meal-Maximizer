@@ -26,18 +26,21 @@ public class Custom extends AppCompatActivity {
         int[] daysinm = {31,28,31,30,31,30,31,31,30,31,30,31};
         String[] startdate = start.split("/",2);
         String[] enddate = end.split("/",2);
-       // System.o
+
         int startmonth = Integer.parseInt(startdate[0]);
         int endmonth = Integer.parseInt(enddate[0]);
         if(startmonth >12 ||endmonth >12){
             System.out.print("error enter in a month less than or equal to 12");
             return 0;
         }
+        if(startmonth>endmonth && endmonth<6) {
+            endmonth = endmonth+12;
+        }
         int startday = Integer.parseInt(startdate[1]);
         int endday = Integer.parseInt(enddate[1]);
         int totaldays = 0;
         for(int i = startmonth; i<endmonth; i++){
-            totaldays+=daysinm[i];
+            totaldays+=daysinm[i%12];
         }
         totaldays = totaldays-startday+endday;
         return totaldays;

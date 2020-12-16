@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class freshman extends AppCompatActivity implements View.OnClickListener {
+public class Upper extends AppCompatActivity implements View.OnClickListener {
     public static double[] calculations(int totaldays, double mealswipes, double diningdollars) {
         double mpd = mealswipes/totaldays;
         double ddpd = diningdollars/totaldays;
@@ -17,7 +17,7 @@ public class freshman extends AppCompatActivity implements View.OnClickListener 
     }
 
     public void calculator(double dd, int ms) {
-        int totaldays = 70;
+        int totaldays = 117;
         double[] finalvalue = calculations(totaldays,ms,dd);
         double mpd = finalvalue[0];
         double mpw = finalvalue[1];
@@ -27,7 +27,7 @@ public class freshman extends AppCompatActivity implements View.OnClickListener 
         }
         double  ddpd= finalvalue[2];
         double ddpw = finalvalue[3];
-       // System.out.print("Hello");
+        // System.out.print("Hello");
         TextView mmpdtext = (TextView) findViewById(R.id.mmpd);
         TextView mmpwtext = (TextView) findViewById(R.id.mmpw);
         TextView ddpdtext = (TextView) findViewById(R.id.ddpd);
@@ -37,28 +37,34 @@ public class freshman extends AppCompatActivity implements View.OnClickListener 
         ddpdtext.setText(String.format("%.2f",mpd)+" Meal Swipes Per Day");
         ddpwtext.setText(String.format("%.2f",mpw)+" Meal Swipes Per Week");
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_freshman);
+        setContentView(R.layout.activity_upper);
 
-        Button preset1 = findViewById(R.id.button8);
-        Button preset2 = findViewById(R.id.button12);
-        Button preset3 = findViewById(R.id.button13);
-        Button preset4 = findViewById(R.id.button14);
-        Button preset5 = findViewById(R.id.button15);
-        Button preset6 = findViewById(R.id.button16);
-        Button preset7 = findViewById(R.id.button17);
-        Button preset8 = findViewById(R.id.button18);
-        Button preset9 = findViewById(R.id.button19);
-        Button preset10 = findViewById(R.id.button20);
-        Button preset11 = findViewById(R.id.button21);
-        Button preset12 = findViewById(R.id.button22);
-        Button preset13 = findViewById(R.id.button23);
-        Button preset14 = findViewById(R.id.button24);
-        Button preset15 = findViewById(R.id.button25);
-        Button preset16 = findViewById(R.id.button26);
 
+        Button preset1 = findViewById(R.id.button37);
+        Button preset0 = findViewById(R.id.button36);
+        Button preset2 = findViewById(R.id.button38);
+        Button preset3 = findViewById(R.id.button39);
+        Button preset4 = findViewById(R.id.button40);
+        Button preset5 = findViewById(R.id.button41);
+        Button preset6 = findViewById(R.id.button42);
+        Button preset7 = findViewById(R.id.button43);
+        Button preset8 = findViewById(R.id.button44);
+        Button preset9 = findViewById(R.id.button45);
+        Button preset10 = findViewById(R.id.button46);
+        Button preset11 = findViewById(R.id.button47);
+        Button preset12 = findViewById(R.id.button48);
+        Button preset13 = findViewById(R.id.button49);
+        Button preset14 = findViewById(R.id.button50);
+        Button preset15 = findViewById(R.id.button51);
+        Button preset16 = findViewById(R.id.button52);
+        Button preset17 = findViewById(R.id.button53);
+        Button preset18 = findViewById(R.id.button54);
+
+        preset0.setOnClickListener(this);
         preset1.setOnClickListener(this);
         preset2.setOnClickListener(this);
         preset3.setOnClickListener(this);
@@ -75,61 +81,70 @@ public class freshman extends AppCompatActivity implements View.OnClickListener 
         preset14.setOnClickListener(this);
         preset15.setOnClickListener(this);
         preset16.setOnClickListener(this);
-
+        preset17.setOnClickListener(this);
+        preset18.setOnClickListener(this);
 
 
     }
-
     @Override
     public void onClick(View view) {
         switch(view.getId()){
-            case R.id.button23:
-                calculator(300,240);
+            case R.id.button36:
+                calculator(300,45);
                 break;
-            case R.id.button24:
-                calculator(400,240);
+            case R.id.button37:
+                calculator(400,45);
                 break;
-            case R.id.button25:
-                calculator(500,240);
+            case R.id.button38:
+                calculator(500,45);
                 break;
-            case R.id.button20:
-                calculator(300,200);
+            case R.id.button39:
+                calculator(300,100);
                 break;
-            case R.id.button21:
-                calculator(400,200);
+            case R.id.button40:
+                calculator(400,100);
                 break;
-            case R.id.button22:
-                calculator(500,200);
+            case R.id.button41:
+                calculator(500,100);
                 break;
-            case R.id.button17:
-                calculator(300, 165);
-                break;
-            case R.id.button18:
-                calculator(400, 165);
-                break;
-            case R.id.button19:
-                calculator(500, 165);
-                break;
-            case R.id.button14:
+            case R.id.button42:
                 calculator(300, 130);
                 break;
-            case R.id.button15:
+            case R.id.button43:
                 calculator(400, 130);
                 break;
-            case R.id.button16:
+            case R.id.button44:
                 calculator(500, 130);
                 break;
-            case R.id.button8:
-                calculator(300, 100);
+            case R.id.button45:
+                calculator(300, 165);
                 break;
-            case R.id.button12:
-                calculator(400, 100);
+            case R.id.button46:
+                calculator(400, 165);
                 break;
-            case R.id.button13:
-                calculator(500, 100);
+            case R.id.button47:
+                calculator(500, 165);
                 break;
-            case R.id.button26 :
-                calculator(1350, 0);
+            case R.id.button48:
+                calculator(300, 200);
+                break;
+            case R.id.button49:
+                calculator(400, 200);
+                break;
+            case R.id.button50:
+                calculator(500, 200);
+                break;
+            case R.id.button51 :
+                calculator(300, 240);
+                break;
+            case R.id.button52 :
+                calculator(400, 240);
+                break;
+            case R.id.button53 :
+                calculator(500, 240 );
+                break;
+            case R.id.button54 :
+                calculator(1350, 0 );
                 break;
         }
     }

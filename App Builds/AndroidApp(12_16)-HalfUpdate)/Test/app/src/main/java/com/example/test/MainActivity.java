@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button custombutton = findViewById(R.id.idCustomButton);
         Button presetbutton = findViewById(R.id.idPresetButton);
-
+        Button counter = findViewById(R.id.button55);
         custombutton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
                 openPreset();
             }
         });
+        counter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openCount();
+            }
+        });
     }
     public void openCustom() {
         Intent intent = new Intent(this, Custom.class);
@@ -37,4 +43,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,  presets.class);
         startActivity(intent);
     }
+    public void openCount(){
+        Intent intent = new Intent(this, Count.class);
+        startActivity(intent);
+    }
+
 }
