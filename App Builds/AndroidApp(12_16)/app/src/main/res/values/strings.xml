@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="below_select_what_category_you_wish_to_use_custom_allows_for_custom_input_preset_uses_preset_numbers_based_on_your_university_status_to_expedite_the_process_and_meal_counter_allows_you_to_keep_count_of_your_meals_and_dining_dollars_as_you_wish">Below, select what category you wish to use. Custom allows for custom input, Preset uses preset numbers based on your university status to expedite the process, and Meal Counter allows you to keep count of your meals and dining dollars as you wish.</string>
+    <string name="about">ABOUT</string>
+    <string name="how_to_use">HOW TO USE</string>
+    <string name="meal_maximizer_is_an_app_that_helps_you_the_user_better_manage_the_resources_that_are_allocated_to_you_via_your_meal_plan">Meal Maximizer is an app that helps you, the user, better manage the resources that are allocated to you via your meal plan!</string>
+    <string name="meal_maximizer">Meal Maximizer</string>
+    <string name="https_mealplans_tamu_edu_mpt_do_login">https://mealplans.tamu.edu/mpt/do/login</string>
+    <string name="https_dineoncampus_com_tamu">https://dineoncampus.com/tamu</string>
+    <string name="welcome_to_meal_maximizer">Welcome to Meal Maximizer!</string>
+    <string name="preset">PRESET</string>
+    <string name="custom">CUSTOM</string>
+    <string name="meal_counter">MEAL COUNTER</string>
+    <string name="enter_start_date">Enter Start Date</string>
+    <string name="enter_end_date">Enter End Date</string>
+    <string name="a_amp_m_background_picture"><![CDATA[A&M Background Picture]]></string>
+    <string name="enter_dining_dollars">Enter Dining Dollars</string>
+    <string name="enter_meal_swipes">Enter Meal Swipes</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="preset_categories">PRESET CATEGORIES</string>
+    <string name="choose_student_classification_below">CHOOSE STUDENT CLASSIFICATION BELOW</string>
+    <string name="_1st_year_freshman">1ST YEAR = FRESHMAN</string>
+    <string name="go_to">GO TO</string>
+    <string name="corp_of_cadets_corp">CORP OF CADETS = CORP</string>
+    <string name="commuters_upperclassmen_upper">COMMUTERS/UPPERCLASSMEN = UPPER+</string>
+    <string name="_1">+ $1</string>
+    <string name="_25">+ $.25</string>
+    <string name="_10">+ $10</string>
+    <string name="for_those_times_when_you_want_to_manually_keep_track_of_your_meal_intake_and_or_dining_dollar_usage">(For those times when you want to manually keep track of your meal intake and/or dining dollar usage)</string>
+    <string name="_5">+ $5</string>
+    <string name="dining_dollars">DINING DOLLARS</string>
+    <string name="_05">+ $.05</string>
+    <string name="_01">+ $.01</string>
+    <string name="plus1">+ 1</string>
+    <string name="meal_intake">MEAL INTAKE</string>
+    <string name="_130_500">(130,500)</string>
+    <string name="_100_300">(100,300)</string>
+    <string name="freshman_presets">FRESHMAN PRESETS</string>
+    <string name="wc_0_1350">WC - (0,1350)</string>
+    <string name="_100_400">(100,400)</string>
+    <string name="_100_500">(100,500)</string>
+    <string name="_165_300">(165,300)</string>
+    <string name="meal_plans_meal_swipes_dining_dollars">Meal Plans = (Meal Swipes, Dining Dollars)</string>
+    <string name="corp_of_cadets_presets">CORP OF CADETS PRESETS</string>
+    <string name="_165_400">(165,400)</string>
+    <string name="sophomores_and_commuter_presets">SOPHOMORES+ AND COMMUTER PRESETS</string>
+    <string name="_130_400">(130,400)</string>
+    <string name="_165_500">(165,500)</string>
+    <string name="_130_300">(130,300)</string>
+    <string name="_45_500">(45,500)</string>
+    <string name="_45_400">(45,400)</string>
+    <string name="_45_300">(45,300)</string>
+    <string name="_200_400">(200,400)</string>
+    <string name="_200_300">(200,300)</string>
+    <string name="_200_500">(200,500)</string>
+    <string name="_240_400">(240,400)</string>
+    <string name="_0_1350">(0,1350)</string>
+    <string name="_240_300">(240,300)</string>
+    <string name="_240_500">(240,500)</string>
+    <string name="a_m_football_helmet_as_background"><![CDATA[A&M Football Helmet as Background]]></string>
+    <string name="fish_camp_background_picture">Fish Camp background picture</string>
+    <string name="quad_background_picture">Quad Background Picture</string>
+    <string name="msc_background_picture">MSC Background Picture</string>
+    <string name="reveille_dog_for_background">Reveille Dog for Background</string>
+    <string name="enter_in_the_number_of_meal_swipes_that_you_currently_possess">Enter in the number of Meal Swipes that you currently possess</string>
+    <string name="enter_in_the_number_of_dining_dollars_that_you_currently_possess">Enter in the number of Dining Dollars that you currently possess</string>
+    <string name="enter_in_the_date_at_which_you_wish_to_start_your_calculation_at_in_mm_dd_format">Enter in the date at which you wish to start your calculation at in (MM/DD) format</string>
+    <string name="enter_in_the_date_at_which_you_wish_to_end_your_calculation_at_in_mm_dd_format">Enter in the date at which you wish to end your calculation at in (MM/DD) format</string>
+    <string name="fall_semester">Fall Semester</string>
+</resources>
