@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/palanquin_medium"
+        android:text="Meal Maximizer"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/aboutcontent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="16dp"
+            android:text="@string/meal_maximizer_is_an_app_that_helps_you_the_user_better_manage_the_resources_that_are_allocated_to_you_via_your_meal_plan"
+            android:textAlignment="viewStart"
+            android:textColor="#500000"
+            android:textSize="14sp" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonabout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/adamina"
+        android:text="@string/about"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/aboutcontent" />
+
+    <ScrollView
+        android:id="@+id/howtocontent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adamina"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="16dp"
+            android:text="@string/below_select_what_category_you_wish_to_use_custom_allows_for_custom_input_preset_uses_preset_numbers_based_on_your_university_status_to_expedite_the_process_and_meal_counter_allows_you_to_keep_count_of_your_meals_and_dining_dollars_as_you_wish"
+            android:textAlignment="viewStart"
+            android:textColor="#500000"
+            android:textSize="14sp" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonhowto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/adamina"
+        android:text="@string/how_to_use"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/howtocontent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="88dp"
+        android:autoLink="web"
+        android:fontFamily="@font/adamina"
+        android:linksClickable="true"
+        android:text="https://mealplans.tamu.edu/mpt/do/login"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="44dp"
+        android:autoLink="web"
+        android:fontFamily="@font/adamina"
+        android:linksClickable="true"
+        android:text="https://dineoncampus.com/tamu"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="354dp"
+        android:contentDescription="Welcome to Meal Maximizer!"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.286"
+        app:srcCompat="@drawable/entry" />
+
+    <Button
+        android:id="@+id/idPresetButton"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:background="#3C0000"
+        android:fontFamily="@font/adamina"
+        android:text="PRESET"
+        android:textColor="#F6F6F6"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button55"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toEndOf="@+id/idCustomButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <Button
+        android:id="@+id/idCustomButton"
+        android:layout_width="95dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:background="#3C0000"
+        android:fontFamily="@font/adamina"
+        android:text="CUSTOM"
+        android:textColor="#F6F6F6"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <Button
+        android:id="@+id/button55"
+        android:layout_width="95dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="40dp"
+        android:background="#3C0000"
+        android:fontFamily="@font/adamina"
+        android:text="MEAL COUNTER"
+        android:textColor="#F6F6F6"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
