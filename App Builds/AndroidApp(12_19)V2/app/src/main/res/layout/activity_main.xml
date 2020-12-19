@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/palanquin"
+        android:text="@string/meal_maximizer"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/aboutcontent"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:layout_constraintVertical_bias="0.529">
+
+        <Button
+            android:id="@+id/buttonabouttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:fontFamily="@font/adamina"
+            android:text="@string/meal_maximizer_is_an_app_that_helps_you_the_user_better_manage_the_resources_that_are_allocated_to_you_via_your_meal_plan"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#500000"
+            android:textSize="10sp" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonabout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/adamina"
+        android:text="@string/about"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <ScrollView
+        android:id="@+id/howtocontent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/buttonhowtotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:fontFamily="@font/adamina"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/below_select_what_category_you_wish_to_use_custom_allows_for_custom_input_preset_uses_preset_numbers_based_on_your_university_status_to_expedite_the_process_and_meal_counter_allows_you_to_keep_count_of_your_meals_and_dining_dollars_as_you_wish"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#500000"
+            android:textSize="10sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonhowto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/adamina"
+        android:text="@string/how_to_use"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="60dp"
+        android:autoLink="web"
+        android:fontFamily="@font/adamina"
+
+        android:linksClickable="true"
+        android:text="@string/https_mealplans_tamu_edu_mpt_do_login"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="24dp"
+        android:autoLink="web"
+        android:fontFamily="@font/adamina"
+        android:linksClickable="true"
+        android:text="@string/https_dineoncampus_com_tamu"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="354dp"
+        android:contentDescription="@string/welcome_to_meal_maximizer"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31"
+        app:srcCompat="@drawable/entry" />
+
+    <Button
+        android:id="@+id/idPresetButton"
+        android:layout_width="85dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#3C0000"
+        android:fontFamily="@font/adamina"
+        android:text="@string/preset"
+        android:textColor="#F6F6F6"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/button55"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toEndOf="@+id/idCustomButton"
+        app:layout_constraintTop_toBottomOf="@+id/howtocontent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <Button
+        android:id="@+id/idCustomButton"
+        android:layout_width="95dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#3C0000"
+        android:fontFamily="@font/adamina"
+        android:text="@string/custom"
+        android:textColor="#F6F6F6"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howtocontent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <Button
+        android:id="@+id/button55"
+        android:layout_width="95dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="#3C0000"
+        android:fontFamily="@font/adamina"
+        android:text="@string/meal_counter"
+        android:textColor="#F6F6F6"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howtocontent"
+        app:layout_constraintVertical_bias="0.52" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
