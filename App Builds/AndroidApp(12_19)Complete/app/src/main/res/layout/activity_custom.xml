@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/palanquin"
+        android:text="@string/custom"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:alpha=".40"
+        android:contentDescription="@string/a_amp_m_background_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/custom" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="205dp"
+        android:layout_height="23dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/enter_end_date"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idDineDollars"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="205dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/enter_start_date"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idMealSwipes"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="205dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/enter_dining_dollars"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="205dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/enter_meal_swipes"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <EditText
+        android:id="@+id/idMealSwipes"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="44dp"
+        android:autofillHints=""
+        android:background="#E7E3E3"
+        android:ems="10"
+        android:fontFamily="@font/palanquin"
+        android:hint="@string/enter_in_the_number_of_meal_swipes_that_you_currently_possess"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <EditText
+        android:id="@+id/idDineDollars"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="44dp"
+        android:background="#E7E3E3"
+        android:ems="10"
+        android:fontFamily="@font/palanquin"
+        android:hint="@string/enter_in_the_number_of_dining_dollars_that_you_currently_possess"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <EditText
+        android:id="@+id/idStartDate"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="44dp"
+        android:background="#E7E3E3"
+        android:ems="10"
+        android:fontFamily="@font/palanquin"
+        android:hint="@string/enter_in_the_date_at_which_you_wish_to_start_your_calculation_at_in_mm_dd_format"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <EditText
+        android:id="@+id/idEndDate"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="44dp"
+        android:background="#E7E3E3"
+        android:ems="10"
+        android:fontFamily="@font/palanquin"
+        android:hint="@string/enter_in_the_date_at_which_you_wish_to_end_your_calculation_at_in_mm_dd_format"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColor="#500000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.066" />
+
+
+    <Button
+        android:id="@+id/idsubmitButton"
+        android:layout_width="190dp"
+        android:layout_height="41dp"
+        android:background="#3C0000"
+        android:fontFamily="@font/adamina"
+        android:text="@string/calculate"
+        android:textColor="#F6F6F6"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.612" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="205dp"
+        android:layout_height="182dp"
+        android:layout_margin="0dp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idsubmitButton"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingClass">
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/mmpd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/adamina"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#3C0000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mmpw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/adamina"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#3C0000"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_width="205dp"
+        android:layout_height="182dp"
+        android:layout_margin="0dp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idsubmitButton"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingClass">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/ddpd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/adamina"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#3C0000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/ddpw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/adamina"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#3C0000"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
