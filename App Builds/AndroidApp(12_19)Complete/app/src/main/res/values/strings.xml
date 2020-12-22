@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Test</string>
+    <string name="app_name">Meal Maximizer - TAMU</string>
     <string name="below_select_what_category_you_wish_to_use_custom_allows_for_custom_input_preset_uses_preset_numbers_based_on_your_university_status_to_expedite_the_process_and_meal_counter_allows_you_to_keep_count_of_your_meals_and_dining_dollars_as_you_wish">Below, select what category you wish to use. Custom allows for custom input, Preset uses preset numbers based on your university status to expedite the process, and Meal Counter allows you to keep count of your meals and dining dollars as you wish.</string>
     <string name="about">ABOUT</string>
     <string name="how_to_use">HOW TO USE</string>
@@ -19,10 +19,10 @@
     <string name="calculate">CALCULATE</string>
     <string name="preset_categories">PRESET CATEGORIES</string>
     <string name="choose_student_classification_below">CHOOSE STUDENT CLASSIFICATION AND SCHOOL SEMESTER BELOW</string>
-    <string name="_1st_year_freshman">1ST YEAR = FRESHMAN</string>
-    <string name="go_to">GO TO</string>
-    <string name="corp_of_cadets_corp">CORP OF CADETS = CORP</string>
-    <string name="commuters_upperclassmen_upper">COMMUTERS/UPPERCLASSMEN = UPPER+</string>
+    <string name="_1st_year_freshman">FRESHMAN</string>
+    <string name="go_to">SELECT</string>
+    <string name="corp_of_cadets_corp">CORP OF CADETS</string>
+    <string name="commuters_upperclassmen_upper">COMMUTERS/UPPERCLASSMEN</string>
     <string name="_1">$1</string>
     <string name="_25">$.25</string>
     <string name="_10">$10</string>

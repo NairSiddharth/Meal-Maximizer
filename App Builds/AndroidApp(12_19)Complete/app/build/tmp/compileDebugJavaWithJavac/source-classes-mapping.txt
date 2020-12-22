@@ -1,35 +1,32 @@
-com/example/test/Corp.java
- com.example.test.Corp
-com/example/test/Count.java
- com.example.test.Count
-com/example/test/CrossfadeActivity.java
- com.example.test.CrossfadeActivity
- com.example.test.CrossfadeActivity$1
-com/example/test/presets.java
- com.example.test.presets
- com.example.test.presets$1
- com.example.test.presets$2
- com.example.test.presets$3
- com.example.test.presets$4
-com/example/test/freshman.java
- com.example.test.freshman
-com/example/test/BuildConfig.java
- com.example.test.BuildConfig
-com/example/test/Custom.java
- com.example.test.Custom
- com.example.test.Custom$1
-com/example/test/Upper.java
- com.example.test.Upper
-com/example/test/MainActivity.java
- com.example.test.MainActivity
- com.example.test.MainActivity$1
- com.example.test.MainActivity$10
- com.example.test.MainActivity$11
- com.example.test.MainActivity$2
- com.example.test.MainActivity$3
- com.example.test.MainActivity$4
- com.example.test.MainActivity$5
- com.example.test.MainActivity$6
- com.example.test.MainActivity$7
- com.example.test.MainActivity$8
- com.example.test.MainActivity$9
+com/example/release/MainActivity.java
+ com.example.release.MainActivity
+ com.example.release.MainActivity$1
+ com.example.release.MainActivity$10
+ com.example.release.MainActivity$11
+ com.example.release.MainActivity$2
+ com.example.release.MainActivity$3
+ com.example.release.MainActivity$4
+ com.example.release.MainActivity$5
+ com.example.release.MainActivity$6
+ com.example.release.MainActivity$7
+ com.example.release.MainActivity$8
+ com.example.release.MainActivity$9
+com/example/release/Upper.java
+ com.example.release.Upper
+com/example/release/presets.java
+ com.example.release.presets
+ com.example.release.presets$1
+ com.example.release.presets$2
+ com.example.release.presets$3
+ com.example.release.presets$4
+com/example/release/BuildConfig.java
+ com.example.release.BuildConfig
+com/example/release/Count.java
+ com.example.release.Count
+com/example/release/Custom.java
+ com.example.release.Custom
+ com.example.release.Custom$1
+com/example/release/Corp.java
+ com.example.release.Corp
+com/example/release/freshman.java
+ com.example.release.freshman

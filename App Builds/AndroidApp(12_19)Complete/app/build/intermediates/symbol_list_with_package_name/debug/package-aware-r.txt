@@ -1,4 +1,4 @@
-com.example.test
+com.example.release
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -1674,7 +1674,6 @@ id beginning
 id blocking
 id bottom
 id bounce
-id button
 id button10
 id button11
 id button12
@@ -1685,7 +1684,6 @@ id button16
 id button17
 id button18
 id button19
-id button2
 id button20
 id button21
 id button22
@@ -2214,7 +2212,6 @@ layout test_toolbar
 layout test_toolbar_custom_background
 layout test_toolbar_elevation
 layout test_toolbar_surface
-layout testing
 layout text_view_with_line_height_from_appearance
 layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style

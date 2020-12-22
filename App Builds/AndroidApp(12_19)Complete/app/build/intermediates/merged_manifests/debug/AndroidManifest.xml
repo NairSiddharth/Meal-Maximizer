@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.test"
+    package="com.example.release"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -19,13 +19,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.test.Count" />
-        <activity android:name="com.example.test.Corp" />
-        <activity android:name="com.example.test.Upper" />
-        <activity android:name="com.example.test.freshman" />
-        <activity android:name="com.example.test.presets" />
-        <activity android:name="com.example.test.Custom" />
-        <activity android:name="com.example.test.MainActivity" >
+        <activity android:name="com.example.release.Count" />
+        <activity android:name="com.example.release.Corp" />
+        <activity android:name="com.example.release.Upper" />
+        <activity android:name="com.example.release.freshman" />
+        <activity android:name="com.example.release.presets" />
+        <activity android:name="com.example.release.Custom" />
+        <activity android:name="com.example.release.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
