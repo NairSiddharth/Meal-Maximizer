@@ -1994,6 +1994,7 @@ id stretch
 id submenuarrow
 id submit_area
 id switch1
+id switch2
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -2039,6 +2040,7 @@ id textView29
 id textView3
 id textView30
 id textView31
+id textView32
 id textView4
 id textView5
 id textView6

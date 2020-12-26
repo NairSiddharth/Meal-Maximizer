@@ -953,7 +953,7 @@
     <string name="_165_300">(165,300)</string>
     <string name="_165_400">(165,400)</string>
     <string name="_165_500">(165,500)</string>
-    <string name="_1st_year_freshman">1ST YEAR = FRESHMAN</string>
+    <string name="_1st_year_freshman">FRESHMAN</string>
     <string name="_200_300">(200,300)</string>
     <string name="_200_400">(200,400)</string>
     <string name="_200_500">(200,500)</string>
@@ -1006,8 +1006,8 @@
     <string name="chip_text">Chip text</string>
     <string name="choose_student_classification_below">CHOOSE STUDENT CLASSIFICATION AND SCHOOL SEMESTER BELOW</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
-    <string name="commuters_upperclassmen_upper">COMMUTERS/UPPERCLASSMEN = UPPER+</string>
-    <string name="corp_of_cadets_corp">CORP OF CADETS = CORP</string>
+    <string name="commuters_upperclassmen_upper">COMMUTERS/UPPERCLASSMEN</string>
+    <string name="corp_of_cadets_corp">CORP OF CADETS</string>
     <string name="corp_of_cadets_presets">CORP OF CADETS PRESETS</string>
     <string name="custom">CUSTOM</string>
     <string name="dining_dollars">DINING DOLLARS</string>
@@ -1027,7 +1027,7 @@
     <string name="fish_camp_background_picture">Fish Camp background picture</string>
     <string name="for_those_times_when_you_want_to_manually_keep_track_of_your_meal_intake_and_or_dining_dollar_usage">(For those times when you want to manually keep track of your meal intake and/or dining dollar usage)</string>
     <string name="freshman_presets">FRESHMAN PRESETS</string>
-    <string name="go_to">GO TO</string>
+    <string name="go_to">SELECT</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="how_to_use">HOW TO USE</string>
     <string name="https_dineoncampus_com_tamu">https://dineoncampus.com/tamu</string>
