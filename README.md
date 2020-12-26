@@ -12,4 +12,3 @@ Contributing-> If you would like to contribute to this project and have knowledg
 
 Credits-> Siddharth Nair for the UI design of the app and the presets,custom, and counter sections of the app and Christopher Pasala for Quality Control, calculations of days, holiday implementation and linking of UI to the backend. Without either of them this project would not have gotten off the ground.
 
-License-> GNU General Public License v3.0
