@@ -101,7 +101,7 @@ public class Main
        	 }
       	 mpw = Math.round(mpw);
        	System.out.println("You should be using " + mpw + " meals per week");
-       System.out.print("You should be using ");
+        System.out.print("You should be using ");
       	System.out.printf("%.2f", finalvalues[2]);
       	System.out.println(" dining dollars per day");
       	System.out.print("You should be using ");
@@ -200,7 +200,7 @@ public class Main
     // Added 9/16/2020
     Calendar rightNow = Calendar.getInstance();
     int righthour = rightNow.get(Calendar.HOUR);
-    i rightam = (rightNow.get(Calendar.AM));
+    rightam = (rightNow.get(Calendar.AM));
     if ((righthour) == 0 && (rightam == 0)) {
       count = 0;
     }
