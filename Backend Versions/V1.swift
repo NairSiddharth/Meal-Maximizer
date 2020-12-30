@@ -161,18 +161,27 @@ func preset(year: String, semester: String) {
     }
 
 }
+
 func days(start: String, end: String) -> Int {
-    var stringcomponents: [String] = start.components(separatedBy: "-")
-    var year: Int = Int(stringcomponents[0])!
-    let daysinm: [Int] = [31,28,31,30,31,30,31,31,30,31,30,31]
-    if year % 4 == 0 && year %100!=0 || year%400==0 {
+    var stringcomponents: [String] = start.components(separatedBy: "/")
+    let year: Int = Int(stringcomponents[0])!
+    var daysinm: [Int] = [31,28,31,30,31,30,31,31,30,31,30,31]
+    if (year % 4 == 0) || (year%400==0) {
         daysinm[1]=29
     }
-    var startdate: [String] = start.components(separatedBy:"/")
-    var enddate: [String] = end.components(separatedBy:"/")
-    var startmonth: Int = Int(startdate[0])!
-    var endmonth: Int = Int(enddate[0])!
-    var startday: Int = Int(startdate[1])!
-    var endday: Int = Int(enddate[1])!
+    let startdate: [String] = start.components(separatedBy:"/")
+    let enddate: [String] = end.components(separatedBy:"/")
+    let startmonth: Int = Int(startdate[0])!
+    let endmonth: Int = Int(enddate[0])!
+    let startday: Int = Int(startdate[1])!
+    let endday: Int = Int(enddate[1])!
+    var totaldays: Int = 0
+    var i: Int = startmonth
+    while i < endmonth {
+        totaldays+=daysinm[i]
+        i+=1
+    }
+    totaldays = totaldays-startday+endday
+    return totaldays
 }
 
