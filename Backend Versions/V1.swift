@@ -2,50 +2,51 @@ import Foundation
 
 @main // provides entry point for program to start at 
 print("Enter (preset) for a preset meal plan, (custom) for a custom meal plan, or (counter) to count meals eaten in a day")
-let choice = readline()
+let choice = readLine()!
 var year: String
 var semester: String
 if choice.lowercased() == "preset" {
     print("Enter in (freshman,corp,upper) if you are a freshman,corp of cadet member, or upperclassmen (sophomore and higher)")
-    year = readline()
+    year = readLine()!
     print("Enter in (fall,spring) depending on the semester you wish to calculate for")
-    semester = readline()
+    semester = readLine()!
     preset(year,semester)    
 }
-else if choice.lowercased == "custom" {
+else if choice.lowercased()! == "custom" {
     custom();
 }
 
 func custom(){
     print("Enter amount of dining dollars: ")
     var diningdollars: Double
-    diningdollars = readline()
+    diningdollars = Double(readLine()!)!
     var mealswipes: Int
     print("Enter the amount of meal swipes remaining: ")
-    mealswipes = readline()
+    mealswipes = Int(readLine()!)!
     var startdate: String
     print("Enter the date that the calculation should start at in (MM/DD): ")
-    startdate = readline()
+    startdate = readLine()!
     var enddate: String
     print("Enter the date that the calculation should end at in (MM/DD): ")
-    enddate = readline()
+    enddate = readLine()!
     var totaldays: Int
     totaldays = days(startdate,enddate)
 
     var finalvalues = [Double](calculations(totaldays, diningdollars, mealswipes))
     var mpd: Double
     var mpw: Double
+    var mpdr: Double
     mpd = finalvalues[0]
     mpw = finalvalues[1]
     if mpd < 1{
         print("You do not have enough meals to have at least one per day")
     }
     else {
-        mpd = mpd.round()
-        print("You should be using " + mpd + " meals per day")
+        mpd = mpd.rounded()
+        print("You should be using " + String(mpd) + " meals per day")
     }
-    mpw = mpw.round()
-    print("You should be using " + mpw + " meals per week")
+    mpw = mpw.rounded()
+    print("You should be using " + String(mpw) + " meals per week")
     print("You should be using ", terminator:"")
     print(format: "%.2f",finalvalues[2, terminator:""]) // reason why Foundation is imported
     print(" dining dollars per day")
