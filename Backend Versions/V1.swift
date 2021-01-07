@@ -35,7 +35,6 @@ func custom(){
     var finalvalues = [Double](calculations(totaldays: totaldays,mealswipes: mealswipes,diningdollars: diningdollars))
     var mpd: Double
     var mpw: Double
-    var mpdr: Double
     mpd = finalvalues[0]
     mpw = finalvalues[1]
     if mpd < 1{
@@ -48,11 +47,11 @@ func custom(){
     mpw = mpw.rounded()
     print("You should be using " + String(mpw) + " meals per week")
     print("You should be using ", terminator:"")
-   // print(format: "%.2f",finalvalues[2], terminator:"") -> errors, something to do with how I'm trying to format the string. Further inspection is needed // reason why Foundation is imported
-    print(" dining dollars per day")
+    let fv: String = String(format: "%.2f", finalvalues[2])
+    print(fv + " dining dollars per day") 
     print("You should be using ", terminator:"")
-    //print(format: "%.2f", finalvalues[3], terminator:"") // -> see above reason why Foundation is imported
-    print(" dining dollars per week")
+    let fv2: String = String(format: "%.2f", finalvalues[3])
+    print(fv2 + " dining dollars per week")
 
 }
 
@@ -96,11 +95,12 @@ func preset(year: String, semester: String) {
         mpw = mpw.rounded()
         print("You should be using " + String(mpw) + " meals per week")
         print("You should be using ", terminator:"")
-        //print(format: "%.2f",finalvalues[2, terminator:""]) // reason why Foundation is imported
-        print(" dining dollars per day")
+        let fv: String = String(format: "%.2f", finalvalues[2])
+        print(fv + " dining dollars per day") 
         print("You should be using ", terminator:"")
-      //  print(format: "%.2f", finalvalues[3], terminator:"") // reason why Foundation is imported
-        print(" dining dollars per week")
+        let fv2: String = String(format: "%.2f", finalvalues[3])
+        print(fv2 + " dining dollars per week")
+
     }
     if year.lowercased() == "corp" {
         let corpmealplans: [[Double]] = [[240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500]]
@@ -125,11 +125,12 @@ func preset(year: String, semester: String) {
         mpw = mpw.rounded()
         print("You should be using " + String(mpw) + " meals per week")
         print("You should be using ", terminator:"")
-        //print(format: "%.2f",finalvalues[2, terminator:""]) // reason why Foundation is imported
-        print(" dining dollars per day")
+        let fv: String = String(format: "%.2f", finalvalues[2])
+        print(fv + " dining dollars per day") 
         print("You should be using ", terminator:"")
-      //  print(format: "%.2f", finalvalues[3], terminator:"") // reason why Foundation is imported
-        print(" dining dollars per week")
+        let fv2: String = String(format: "%.2f", finalvalues[3])
+        print(fv2 + " dining dollars per week")
+
     }
     if year.lowercased() == "upper" {
         let sharkmealplans = [[240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500],[130,300],[130,400],[130,500],[100,300],[100,400],[100,500],[0,1350],[45,300],[45,400],[45,500]]
@@ -154,11 +155,12 @@ func preset(year: String, semester: String) {
         mpw = mpw.rounded()
         print("You should be using " + String(mpw) + " meals per week")
         print("You should be using ", terminator:"")
-       // print(format: "%.2f",finalvalues[2], terminator:""]) // reason why Foundation is imported
-        print(" dining dollars per day")
+        let fv: String = String(format: "%.2f", finalvalues[2])
+        print(fv + " dining dollars per day") 
         print("You should be using ", terminator:"")
-       // print(format: "%.2f", finalvalues[3], terminator:"") // reason why Foundation is imported
-        print(" dining dollars per week")
+        let fv2: String = String(format: "%.2f", finalvalues[3])
+        print(fv2 + " dining dollars per week")
+
     }
 
 }
