@@ -12,7 +12,7 @@ if choice.lowercased() == "preset" {
     semester = readLine()!
     preset(year,semester)    
 }
-else if choice.lowercased()! == "custom" {
+else if choice.lowercased() == "custom" {
     custom();
 }
 
@@ -20,19 +20,19 @@ func custom(){
     print("Enter amount of dining dollars: ")
     var diningdollars: Double
     diningdollars = Double(readLine()!)!
-    var mealswipes: Int
+    var mealswipes: Double
     print("Enter the amount of meal swipes remaining: ")
-    mealswipes = Int(readLine()!)!
+    mealswipes = Double(readLine()!)!
     var startdate: String
     print("Enter the date that the calculation should start at in (MM/DD): ")
     startdate = readLine()!
     var enddate: String
     print("Enter the date that the calculation should end at in (MM/DD): ")
     enddate = readLine()!
-    var totaldays: Int
-    totaldays = days(startdate,enddate)
+    var totaldays: Double
+    totaldays = days(start: startdate,end: enddate)
 
-    var finalvalues = [Double](calculations(totaldays, diningdollars, mealswipes))
+    var finalvalues = [Double](calculations(totaldays: totaldays,mealswipes: mealswipes,diningdollars: diningdollars))
     var mpd: Double
     var mpw: Double
     var mpdr: Double
@@ -48,10 +48,10 @@ func custom(){
     mpw = mpw.rounded()
     print("You should be using " + String(mpw) + " meals per week")
     print("You should be using ", terminator:"")
-    print(format: "%.2f",finalvalues[2, terminator:""]) // reason why Foundation is imported
+   // print(format: "%.2f",finalvalues[2], terminator:"") -> errors, something to do with how I'm trying to format the string. Further inspection is needed // reason why Foundation is imported
     print(" dining dollars per day")
     print("You should be using ", terminator:"")
-    print(format: "%.2f", finalvalues[3], terminator:"") // reason why Foundation is imported
+    //print(format: "%.2f", finalvalues[3], terminator:"") // -> see above reason why Foundation is imported
     print(" dining dollars per week")
 
 }
@@ -75,7 +75,7 @@ func preset(year: String, semester: String) {
     var finalvalues = [Double](repeating: 0, count: 4)
     if year.lowercased() == "freshman" {
         let fishmealplans: [[Double]] = [[240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500],[130,300],[130,400],[130,500],[100,300],[100,400],[100,500],[0,1350]]
-        var planchoice = Int(readLine())!
+        let planchoice: Int = Int(readLine()!)!
         if semester.lowercased() == "spring" {
             finalvalues = calculations(totaldays: totaldaysspring, mealswipes: Double(fishmealplans[planchoice-1][0]), diningdollars: Double(fishmealplans[planchoice-1][1]))
         }
@@ -90,21 +90,21 @@ func preset(year: String, semester: String) {
             print("You do not have enough meals to have at least one per day")
         }
         else {
-            mpd = mpd.round()
+            mpd = mpd.rounded()
             print("You should be using " + String(mpd) + " meals per day")
         }
-        mpw = mpw.round()
+        mpw = mpw.rounded()
         print("You should be using " + String(mpw) + " meals per week")
         print("You should be using ", terminator:"")
-        print(format: "%.2f",finalvalues[2, terminator:""]) // reason why Foundation is imported
+        //print(format: "%.2f",finalvalues[2, terminator:""]) // reason why Foundation is imported
         print(" dining dollars per day")
         print("You should be using ", terminator:"")
-        print(format: "%.2f", finalvalues[3], terminator:"") // reason why Foundation is imported
+      //  print(format: "%.2f", finalvalues[3], terminator:"") // reason why Foundation is imported
         print(" dining dollars per week")
     }
     if year.lowercased() == "corp" {
         let corpmealplans: [[Double]] = [[240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500]]
-        var planchoice: Int = Int(readLine())!
+        let planchoice: Int = Int(readLine()!)!
         if semester.lowercased() == "spring" {
             finalvalues = calculations(totaldays: totaldaysspring, mealswipes: Double(corpmealplans[planchoice-1][0]),diningdollars: Double(corpmealplans[planchoice-1][1]))
         }
@@ -119,21 +119,21 @@ func preset(year: String, semester: String) {
             print("You do not have enough meals to have at least one per day")
         }
         else {
-            mpd = mpd.round()
+            mpd = mpd.rounded()
             print("You should be using " + String(mpd) + " meals per day")
         }
-        mpw = mpw.round()
+        mpw = mpw.rounded()
         print("You should be using " + String(mpw) + " meals per week")
         print("You should be using ", terminator:"")
-        print(format: "%.2f",finalvalues[2, terminator:""]) // reason why Foundation is imported
+        //print(format: "%.2f",finalvalues[2, terminator:""]) // reason why Foundation is imported
         print(" dining dollars per day")
         print("You should be using ", terminator:"")
-        print(format: "%.2f", finalvalues[3], terminator:"") // reason why Foundation is imported
+      //  print(format: "%.2f", finalvalues[3], terminator:"") // reason why Foundation is imported
         print(" dining dollars per week")
     }
     if year.lowercased() == "upper" {
         let sharkmealplans = [[240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500],[130,300],[130,400],[130,500],[100,300],[100,400],[100,500],[0,1350],[45,300],[45,400],[45,500]]
-        var planchoice: Int = Int(readLine())!
+        let planchoice: Int = Int(readLine()!)!
             if semester.lowercased() == "spring" {
             finalvalues = calculations(totaldays: totaldaysspring, mealswipes: Double(sharkmealplans[planchoice-1][0]),diningdollars: Double(sharkmealplans[planchoice-1][1]))
         }
@@ -148,41 +148,42 @@ func preset(year: String, semester: String) {
             print("You do not have enough meals to have at least one per day")
         }
         else {
-            mpd = mpd.round()
+            mpd = mpd.rounded()
             print("You should be using " + String(mpd) + " meals per day")
         }
-        mpw = mpw.round()
+        mpw = mpw.rounded()
         print("You should be using " + String(mpw) + " meals per week")
         print("You should be using ", terminator:"")
-        print(format: "%.2f",finalvalues[2], terminator:""]) // reason why Foundation is imported
+       // print(format: "%.2f",finalvalues[2], terminator:""]) // reason why Foundation is imported
         print(" dining dollars per day")
         print("You should be using ", terminator:"")
-        print(format: "%.2f", finalvalues[3], terminator:"") // reason why Foundation is imported
+       // print(format: "%.2f", finalvalues[3], terminator:"") // reason why Foundation is imported
         print(" dining dollars per week")
     }
 
 }
 
-func days(start: String, end: String) -> Int {
+func days(start: String, end: String) -> Double {
     var stringcomponents: [String] = start.components(separatedBy: "/")
     let year: Int = Int(stringcomponents[0])!
-    var daysinm: [Int] = [31,28,31,30,31,30,31,31,30,31,30,31]
+    var daysinm: [Double] = [31,28,31,30,31,30,31,31,30,31,30,31]
     if (year % 4 == 0) || (year%400==0) {
         daysinm[1]=29
     }
     let startdate: [String] = start.components(separatedBy:"/")
     let enddate: [String] = end.components(separatedBy:"/")
-    let startmonth: Int = Int(startdate[0])!
-    let endmonth: Int = Int(enddate[0])!
-    let startday: Int = Int(startdate[1])!
-    let endday: Int = Int(enddate[1])!
-    var totaldays: Int = 0
-    var i: Int = startmonth
-    while i < endmonth {
+    let startmonth: Double = Double(startdate[0])!
+    let endmonth: Double = Double(enddate[0])!
+    let startday: Double = Double(startdate[1])!
+    let endday: Double = Double(enddate[1])!
+    var totaldays: Double = 0
+    var i: Int = Int(startmonth)
+    let j: Int = Int(endmonth)
+    while i < j {
         totaldays+=daysinm[i]
         i+=1
     }
+
     totaldays = totaldays-startday+endday
     return totaldays
 }
-
