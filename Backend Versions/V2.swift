@@ -1,6 +1,5 @@
-import Foundation 
-
-
+import Foundation
+import Glibc
 
 func custom(){
     print("Enter amount of dining dollars: ")
@@ -62,10 +61,10 @@ func preset(year: String, semester: String) {
         let fishmealplans: [[Double]] = [[240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500],[130,300],[130,400],[130,500],[100,300],[100,400],[100,500],[0,1350]]
         let planchoice: Int = Int(readLine()!)!
         if semester.lowercased() == "spring" {
-            finalvalues = calculations(totaldays: totaldaysspring, mealswipes: Double(fishmealplans[planchoice-1][0]), diningdollars: Double(fishmealplans[planchoice-1][1]))
+            finalvalues = calculations(totaldays: totaldaysspring, mealswipes: Double(fishmealplans[planchoice][0]), diningdollars: Double(fishmealplans[planchoice][1]))
         }
         else if semester.lowercased() == "fall" {
-            finalvalues = calculations(totaldays: totaldaysfall, mealswipes: Double(fishmealplans[planchoice-1][0]),diningdollars: Double(fishmealplans[planchoice-1][1]))
+            finalvalues = calculations(totaldays: totaldaysfall, mealswipes: Double(fishmealplans[planchoice][0]),diningdollars: Double(fishmealplans[planchoice][1]))
         }
         var mpd: Double
         var mpw: Double
@@ -92,10 +91,10 @@ func preset(year: String, semester: String) {
         let corpmealplans: [[Double]] = [[240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500]]
         let planchoice: Int = Int(readLine()!)!
         if semester.lowercased() == "spring" {
-            finalvalues = calculations(totaldays: totaldaysspring, mealswipes: Double(corpmealplans[planchoice-1][0]),diningdollars: Double(corpmealplans[planchoice-1][1]))
+            finalvalues = calculations(totaldays: totaldaysspring, mealswipes: Double(corpmealplans[planchoice][0]),diningdollars: Double(corpmealplans[planchoice][1]))
         }
         else if semester.lowercased() == "fall" {
-            finalvalues = calculations(totaldays: totaldaysfall, mealswipes: Double(corpmealplans[planchoice-1][0]),diningdollars: Double(corpmealplans[planchoice-1][1]))
+            finalvalues = calculations(totaldays: totaldaysfall, mealswipes: Double(corpmealplans[planchoice][0]),diningdollars: Double(corpmealplans[planchoice][1]))
         }
         var mpd: Double
         var mpw: Double
@@ -122,10 +121,10 @@ func preset(year: String, semester: String) {
         let sharkmealplans = [[240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500],[130,300],[130,400],[130,500],[100,300],[100,400],[100,500],[0,1350],[45,300],[45,400],[45,500]]
         let planchoice: Int = Int(readLine()!)!
             if semester.lowercased() == "spring" {
-            finalvalues = calculations(totaldays: totaldaysspring, mealswipes: Double(sharkmealplans[planchoice-1][0]),diningdollars: Double(sharkmealplans[planchoice-1][1]))
+            finalvalues = calculations(totaldays: totaldaysspring, mealswipes: Double(sharkmealplans[planchoice][0]),diningdollars: Double(sharkmealplans[planchoice][1]))
         }
         else if semester.lowercased() == "fall" {
-            finalvalues = calculations(totaldays: totaldaysfall, mealswipes: Double(sharkmealplans[planchoice-1][0]),diningdollars: Double(sharkmealplans[planchoice-1][1]))
+            finalvalues = calculations(totaldays: totaldaysfall, mealswipes: Double(sharkmealplans[planchoice][0]),diningdollars: Double(sharkmealplans[planchoice][1]))
         }
         var mpd: Double
         var mpw: Double
@@ -176,17 +175,17 @@ func days(start: String, end: String) -> Double {
     return totaldays
 }
 
-@main // provides entry point for program to start at 
+// main
 print("Enter (preset) for a preset meal plan, (custom) for a custom meal plan, or (counter) to count meals eaten in a day")
-let choice = readLine()!
-var year: String
-var semester: String
+var choice:String = readLine()!
+var year: String 
+var semester: String 
 if choice.lowercased() == "preset" {
     print("Enter in (freshman,corp,upper) if you are a freshman,corp of cadet member, or upperclassmen (sophomore and higher)")
     year = readLine()!
     print("Enter in (fall,spring) depending on the semester you wish to calculate for")
     semester = readLine()!
-    preset(year,semester)    
+    preset(year: year,semester: semester)    
 }
 else if choice.lowercased() == "custom" {
     custom();
