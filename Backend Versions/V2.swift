@@ -90,6 +90,7 @@ func preset(year: String, semester: String) {
     }
     if year.lowercased() == "corp" {
         let corpmealplans: [[Double]] = [[240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500]]
+        print("Pick a meal plan from [240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500] (number starting from 0):")
         let planchoice: Int = Int(readLine()!)!
         if semester.lowercased() == "spring" {
             finalvalues = calculations(totaldays: totaldaysspring, mealswipes: Double(corpmealplans[planchoice][0]),diningdollars: Double(corpmealplans[planchoice][1]))
@@ -120,6 +121,7 @@ func preset(year: String, semester: String) {
     }
     if year.lowercased() == "upper" {
         let sharkmealplans = [[240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500],[130,300],[130,400],[130,500],[100,300],[100,400],[100,500],[0,1350],[45,300],[45,400],[45,500]]
+        print("Pick a meal plan from [240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500],[130,300],[130,400],[130,500],[100,300],[100,400],[100,500],[0,1350],[45,300],[45,400],[45,500] (number starting from 0):")
         let planchoice: Int = Int(readLine()!)!
             if semester.lowercased() == "spring" {
             finalvalues = calculations(totaldays: totaldaysspring, mealswipes: Double(sharkmealplans[planchoice][0]),diningdollars: Double(sharkmealplans[planchoice][1]))
@@ -174,6 +176,77 @@ func days(start: String, end: String) -> Double {
 
     totaldays = totaldays-startday+endday
     return totaldays
+}
+
+func plusone(mealswipes: Int) -> Int {
+    var mealswipes: Int
+    mealswipes+=1
+    return mealswipes
+}
+func minusone(mealswipes: Int) -> Int {
+    var mealswipes: Int
+    mealswipes-=1
+    return mealswipes
+}
+func pluscent(diningdollars: Double) -> Double {
+    var diningdollars: Double
+    diningdollars+=.01
+    return diningdollars
+}
+func minuscent(diningdollars: Double) -> Double {
+    var diningdollars: Double
+    diningdollars-=.01
+    return diningdollars
+}
+func plusfivecent(diningdollars: Double) -> Double {
+    var diningdollars: Double
+    diningdollars+=.05
+    return diningdollars
+}
+func minusfivecent(diningdollars: Double) -> Double {
+    var diningdollars: Double
+    diningdollars-=.05
+    return diningdollars
+}
+func plus25cent(diningdollars: Double) -> Double {
+    var diningdollars: Double
+    diningdollars+=.25
+    return diningdollars
+}
+func minus25cent(diningdollars: Double) -> Double {
+    var diningdollars: Double
+    diningdollars-=.25
+    return diningdollars
+}
+func plusonedollar(diningdollars: Double) -> Double {
+    var diningdollars: Double
+    diningdollars+=1
+    return diningdollars
+}
+func minusonedollar(diningdollars: Double) -> Double {
+    var diningdollars: Double
+    diningdollars-=1
+    return diningdollars
+}
+func plusfivedollar(diningdollars: Double) -> Double {
+    var diningdollars: Double
+    diningdollars+=5
+    return diningdollars
+}
+func minusfivedollar(diningdollars: Double) -> Double {
+    var diningdollars: Double
+    diningdollars-=5
+    return diningdollars
+}
+func plustendollar(diningdollars: Double) -> Double {
+    var diningdollars: Double
+    diningdollars+=10
+    return diningdollars
+}
+func minustendollar(diningdollars: Double) -> Double {
+    var diningdollars: Double
+    diningdollars-=10
+    return diningdollars
 }
 
 // main
