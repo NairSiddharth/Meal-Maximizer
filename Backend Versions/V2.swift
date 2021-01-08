@@ -59,6 +59,7 @@ func preset(year: String, semester: String) {
     var finalvalues = [Double](repeating: 0, count: 4)
     if year.lowercased() == "freshman" {
         let fishmealplans: [[Double]] = [[240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500],[130,300],[130,400],[130,500],[100,300],[100,400],[100,500],[0,1350]]
+        print("Pick a meal plan from [240,300],[240,400],[240,500],[200,300],[200,400],[200,500],[165,300],[165,400],[165,500],[130,300],[130,400],[130,500],[100,300],[100,400],[100,500],[0,1350] (number starting from 0):")
         let planchoice: Int = Int(readLine()!)!
         if semester.lowercased() == "spring" {
             finalvalues = calculations(totaldays: totaldaysspring, mealswipes: Double(fishmealplans[planchoice][0]), diningdollars: Double(fishmealplans[planchoice][1]))
