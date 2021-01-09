@@ -249,6 +249,13 @@ func minustendollar(diningdollars: Double) -> Double {
     return diningdollars
 }
 
+//attempt at saving meal counter data locally
+UserDefaults.standard.set(mealswipes, forKey: "meal swipes")
+UserDefaults.standard.set(diningdollars, forKey: "dining dollars")
+var diningdollars = UserDefaults.standard.double(forKey: "dining dollars")
+var mealswipes = UserDefaults.standard.int(forKey: "meal swipes")
+
+
 // main
 print("Enter (preset) for a preset meal plan, (custom) for a custom meal plan, or (counter) to count meals eaten in a day")
 var choice:String = readLine()!
