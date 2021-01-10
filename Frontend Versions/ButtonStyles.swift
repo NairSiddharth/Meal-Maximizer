@@ -1,7 +1,7 @@
 struct ButtonStyle: ButtonStyle {
     // Color("DarkMaroon") -> Hex Value: 3C0000
     // Color("LightMaroon") -> Hex Value: 500000
-    // Color("DarkBlue") -> Hew Value: 003C71
+    // Color("DarkBlue") -> Hex Value: 003C71
     // put the above two lines into assets.xcassets + select new color set
 
     func makeBody(configuration: Self.Configuration) -> some View {
