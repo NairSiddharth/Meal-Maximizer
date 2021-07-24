@@ -102,7 +102,6 @@ Button(action: {
         .stroke(lineWidth: 2.0)
     )
 } 
-
 Button(action: {
     diningdollars+= pluscent()
 }) {
