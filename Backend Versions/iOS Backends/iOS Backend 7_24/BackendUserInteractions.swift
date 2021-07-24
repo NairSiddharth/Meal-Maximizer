@@ -1,84 +1,10 @@
 import SwiftUI
 
-UserDefaults.standard.set(mealswipes, forKey: "meal swipes")
-UserDefaults.standard.set(diningdollars, forKey: "dining dollars")
-var diningdollars = UserDefaults.standard.double(forKey: "dining dollars")
-var mealswipes = UserDefaults.standard.int(forKey: "meal swipes")
-var mealswipes = 0
-var diningdollars = 0
-func plusone(mealswipes: Int) -> Int {
-    var mealswipes: Int
-    mealswipes+=1
-    return mealswipes
-}
-func minusone(mealswipes: Int) -> Int {
-    var mealswipes: Int
-    mealswipes-=1
-    return mealswipes
-}
-func pluscent(diningdollars: Double) -> Double {
-    var diningdollars: Double
-    diningdollars+=.01
-    return diningdollars
-}
-func minuscent(diningdollars: Double) -> Double {
-    var diningdollars: Double
-    diningdollars-=.01
-    return diningdollars
-}
-func plusfivecent(diningdollars: Double) -> Double {
-    var diningdollars: Double
-    diningdollars+=.05
-    return diningdollars
-}
-func minusfivecent(diningdollars: Double) -> Double {
-    var diningdollars: Double
-    diningdollars-=.05
-    return diningdollars
-}
-func plus25cent(diningdollars: Double) -> Double {
-    var diningdollars: Double
-    diningdollars+=.25
-    return diningdollars
-}
-func minus25cent(diningdollars: Double) -> Double {
-    var diningdollars: Double
-    diningdollars-=.25
-    return diningdollars
-}
-func plusonedollar(diningdollars: Double) -> Double {
-    var diningdollars: Double
-    diningdollars+=1
-    return diningdollars
-}
-func minusonedollar(diningdollars: Double) -> Double {
-    var diningdollars: Double
-    diningdollars-=1
-    return diningdollars
-}
-func plusfivedollar(diningdollars: Double) -> Double {
-    var diningdollars: Double
-    diningdollars+=5
-    return diningdollars
-}
-func minusfivedollar(diningdollars: Double) -> Double {
-    var diningdollars: Double
-    diningdollars-=5
-    return diningdollars
-}
-func plustendollar(diningdollars: Double) -> Double {
-    var diningdollars: Double
-    diningdollars+=10
-    return diningdollars
-}
-func minustendollar(diningdollars: Double) -> Double {
-    var diningdollars: Double
-    diningdollars-=10
-    return diningdollars
-}
+let calc = new calculations()
+
 
 Button(action: {
-    mealswipes+= plusone()
+    mealswipes = calc.plusone(mealswipes)
 }) {
     HStack {
         Text("+")
@@ -89,10 +15,7 @@ Button(action: {
     )
 } 
 Button(action: {
-    mealswipes-= minusone()
-    if mealswipes < 0{
-         mealswipes = 0
-    }
+    mealswipes = calc.minusone(mealswipes)
 }) {
     HStack {
         Text("-")
@@ -103,7 +26,7 @@ Button(action: {
     )
 } 
 Button(action: {
-    diningdollars+= pluscent()
+    diningdollars= calc.pluscent(diningdollars)
 }) {
     HStack {
         Text("+")
@@ -114,7 +37,7 @@ Button(action: {
     )
 } 
 Button(action: {
-    diningdollars-= minuscent()
+    diningdollars = calc.minuscent(diningdollars)
     if diningdollars < 0{
          diningdollars = 0
     }
@@ -128,7 +51,7 @@ Button(action: {
     )
 }
 Button(action: {
-    diningdollars+= plusfivecent()
+    diningdollars = calc.plusfivecent(diningdollars)
 }) {
     HStack {
         Text("+")
@@ -139,7 +62,7 @@ Button(action: {
     )
 } 
 Button(action: {
-    diningdollars-= minusfivecent()
+    diningdollars = calc.minusfivecent(diningdollars)
     if diningdollars < 0{
          diningdollars = 0
     }
@@ -153,7 +76,7 @@ Button(action: {
     )
 }
 Button(action: {
-    diningdollars+= plus25cent()
+    diningdollars+= calc.plus25cent(diningdollars)
 }) {
     HStack {
         Text("+")
@@ -164,10 +87,7 @@ Button(action: {
     )
 } 
 Button(action: {
-    diningdollars-= minus25cent()
-    if diningdollars < 0{
-         diningdollars = 0
-    }
+    diningdollars = calc.minus25cent(diningdollars)
     HStack {
         Text("-")
     }.padding(10.0)
@@ -177,7 +97,7 @@ Button(action: {
     )
 }   
 Button(action: {
-    diningdollars+= plusonedollar()
+    diningdollars+= calc.plusonedollar(diningdollars)
 }) {
     HStack {
         Text("+")
@@ -188,7 +108,7 @@ Button(action: {
     )
 } 
 Button(action: {
-    diningdollars-= minusonedollar()
+    diningdollars-= calc.minusonedollar(diningdollars)
     if diningdollars < 0{
          diningdollars = 0
     }
@@ -202,7 +122,7 @@ Button(action: {
     )
 } 
 Button(action: {
-    diningdollars+= plusfivedollar()
+    diningdollars+= calc.plusfivedollar(diningdollars)
 }) {
     HStack {
         Text("+")
@@ -213,10 +133,7 @@ Button(action: {
     )
 } 
 Button(action: {
-    diningdollars-= minusfivedollar()\
-    if diningdollars < 0{
-         diningdollars = 0
-    }
+    diningdollars = calc.minusfivedollar(diningdollars)
 }) {
     HStack {
         Text("-")
@@ -227,7 +144,7 @@ Button(action: {
     )
 } 
 Button(action: {
-    diningdollars+= plustendollar()
+    diningdollars = calc.plustendollar(diningdollars)
 }) {
     HStack {
         Text("+")
@@ -238,7 +155,7 @@ Button(action: {
     )
 } 
 Button(action: {
-    diningdollars-= minustendollar()
+    diningdollars = calc.minustendollar(diningdollars)
     if diningdollars < 0{
          diningdollars = 0
     }

@@ -1,0 +1,20 @@
+com/example/test/MainActivity.java
+ com.example.test.MainActivity
+ com.example.test.MainActivity$1
+ com.example.test.MainActivity$2
+com/example/test/freshman.java
+ com.example.test.freshman
+com/example/test/Corp.java
+ com.example.test.Corp
+com/example/test/BuildConfig.java
+ com.example.test.BuildConfig
+com/example/test/Custom.java
+ com.example.test.Custom
+ com.example.test.Custom$1
+com/example/test/presets.java
+ com.example.test.presets
+ com.example.test.presets$1
+ com.example.test.presets$2
+ com.example.test.presets$3
+com/example/test/Upper.java
+ com.example.test.Upper
